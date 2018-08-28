@@ -33,14 +33,18 @@
 
  //--Setup
  void setup() {
-  lcd.begin(16, 2);
-  lcd.setCursor(1, 0);
-  lcd.print("Denilson Gomes");
-  lcd.setCursor(3, 1);
+  lcd.begin(16, 2); //Inicio o display
+  lcd.setCursor(0, 0); //Coloco o cursor na linha 0 e coluna 0
+  lcd.print("Denilson Gomes"); //Exibo meu nome
+  lcd.setCursor(1, 1);
   lcd.print("Engenheiro");
 }
 
+//--Loop
 void loop() {
-  //lcd.setCursor(0, 1);
-  //lcd.print(millis() / 1000);
+  lcd.autoscroll(); //Ativo o auto-rolar do display (efeito deslizar)
+  lcd.setCursor(0, 0); //Coloco o cursor na linha 0 e coluna 0
+  lcd.print("D"); //Imprimo a primeira letra do meu nome
+  delay(350); //Um passo a cada 300ms
+  //lcd.noAutoscroll();
 }
