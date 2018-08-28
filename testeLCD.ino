@@ -26,7 +26,7 @@
  #include <LiquidCrystal.h>
  
  //--Variaveis e Constantes
- const int rs = 7, en = 6, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+ const int rs = 8, en = 9, d4 = 10, d5 = 11, d6 = 12, d7 = 13;
 
  //--Objetos
  LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
@@ -34,10 +34,13 @@
  //--Setup
  void setup() {
   lcd.begin(16, 2);
+  lcd.setCursor(1, 0);
   lcd.print("Denilson Gomes");
+  lcd.setCursor(3, 1);
+  lcd.print("Engenheiro");
 }
 
 void loop() {
-  lcd.setCursor(0, 1);
-  lcd.print(millis() / 1000);
+  //lcd.setCursor(0, 1);
+  //lcd.print(millis() / 1000);
 }
