@@ -1,5 +1,5 @@
 ﻿***
-<h1 align="right" > Teste de Monitor LCD
+<h1 align="center" > Teste de Monitor LCD
 
 <br>
 <br>
